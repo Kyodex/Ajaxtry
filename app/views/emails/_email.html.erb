@@ -1,0 +1,6 @@
+<%= form_for email do |f| %>
+  <%= f.check_box :read %>
+  <%= f.submit "Update" %>
+  <%= f.label :read, email.object %>
+  <%= link_to "(remove)", email, method: :delete, data: {confirm: "Are you sure?"} %>
+<% end %>

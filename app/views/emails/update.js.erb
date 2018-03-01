@@ -1,0 +1,5 @@
+<% if @email.complete? %>
+  $('#edit_email_<%= @email.id %>').appendTo('#complete_emails');
+<% else %>
+  $('#edit_email_<%= @email.id %>').appendTo('#incomplete_emails');
+<% end %>

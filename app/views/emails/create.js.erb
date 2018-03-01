@@ -1,0 +1,4 @@
+$('#new_email').remove();
+$('#new_link').show();
+$('#incomplete_emails').append('<%= j render(@email) %>')
+$('#edit_email_<%= @email.id %>').submitOnCheck();

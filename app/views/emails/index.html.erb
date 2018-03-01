@@ -1,0 +1,18 @@
+<script
+ src="https://code.jquery.com/jquery-3.3.1.min.js"
+ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
+
+
+<h1>Emails Viewer Ajax</h1>
+<%= link_to "Nouvel Email", new_email_path, id: "new_link", remote:true, class: "button button1" %>
+
+<h2>Unreaded Emails</h2>
+<div class="emails" id="incomplete_emails">
+  <%= render @incomplete_emails %>
+</div>
+
+<h2>Readed Emails</h2>
+<div class="emails" id="complete_emails">
+  <%= render @complete_emails %>
+</div>

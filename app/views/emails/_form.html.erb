@@ -1,0 +1,5 @@
+<%= form_for @email, remote: true do |f| %>
+  <%= f.text_field :object, label:"Titre" %>
+  <%= f.text_field :body, label:"Texte" %>
+  <%= f.submit %>
+<% end %>
