@@ -8,7 +8,7 @@ h2 {
 
 #incomplete_emails form {
   margin: 5px 0;
-  label {color:red}
+  label {color:orange}
   font-weight: bold;
    	border-bottom: 1px solid #0a8fd5;
 }
@@ -18,7 +18,7 @@ h2 {
   color: #777;
   margin: 3px 0;
   label { text-decoration: inherit; color:green }
-   	border-bottom: 1px solid #0a8fd5;
+  border-bottom: 1px solid #0a8fd5;
 }
 
 
@@ -31,7 +31,7 @@ h2 {
   }
 }
 
-.button {
+.buttton {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -44,8 +44,46 @@ h2 {
     cursor: pointer;
 }
 
-.button1 {
+.buttton1 {
     background-color: white;
     color: black;
     border: 2px solid #4CAF50;
+}
+
+
+
+.tab {
+    overflow: visible;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: grey;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 4px 9px;
+    border: 1px solid #ccc;
+    border-top: none;
 }

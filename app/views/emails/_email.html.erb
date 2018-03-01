@@ -1,6 +1,15 @@
 <%= form_for email do |f| %>
-  <%= f.check_box :read %>
-  <%= f.submit "Update" %>
-  <%= f.label :read, email.object %>
-  <%= link_to "(remove)", email, method: :delete, data: {confirm: "Are you sure?"} %>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'email')">Lire</button>
+    <a>Object : </a><%= f.label :read, email.object %>
+  </div>
+
+  <div id="email" class="tabcontent">
+    <a>Corp : </a><%= f.label :read, email.body %>
+  </div>
+
+<p><%= f.check_box :read %>
+<%= f.submit "Valider" %>
+  <%= link_to "(remove)", email, method: :delete, data: {confirm: "Are you sure?"} %></p>
 <% end %>
