@@ -1,24 +1,6 @@
-# README
+# Ajax email viewer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[heroku link](https://immense-brook-10766.herokuapp.com/)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Quelques soucis : 
+PAs de id sur les emails ce qui pose problème lors de l'affichage du mail (n'affiche que le premier sur clique)
